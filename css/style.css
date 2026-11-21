@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*,::before,::after{ margin: 0; box-sizing: border-box; }
+a{ text-decoration: none;}
+button{ cursor: pointer;}
+img{ vertical-align: bottom;}
+ul{ list-style: none; padding: 0;}
+
+
+html{
+     font-size: 10px;
+     --ff: "Poppins", sans-serif;
+     --blue:#132577;
+     --white:#fff;
+     --black:#000;
+     --yellow:#FFC107;
+     --gray:#7d7d7d;
+     --lgray:#92989F;
+}
+
+body{
+     font: 16px var(--ff);
+}
+
+.container{
+     max-width: 1260px;
+     margin: auto;
+     padding:0 1rem;
+}
+.flex{ display: flex; }
+.align-center{ align-items: center;}
+.jusify-sb{ justify-content: space-between;}
+.jusify-right{ justify-content: end;}
+.jusify-center{ justify-content: center;}
+.row{ display: grid; grid-template: auto/repeat(12,1fr); gap: 2rem;}
+.col-2{ grid-column: span 2;}
+.col-3{ grid-column: span 3;}
+.col-4{ grid-column: span 4;}
+.col-6{ grid-column: span 6;}
+.img-resp{ max-width: 100%; height: auto; }
+.text-center{ text-align: center;}
+
+
+
+
+.wrap-1{ 
+     background: url(../img/banner-bg.svg) no-repeat center/cover var(--blue); 
+     color: var(--white); 
+     padding: 6rem 0 8.5rem;
+
+     header{
+          margin-bottom: 6rem;
+          h1{
+               a{
+                    color: inherit;
+               }
+          }
+          nav{
+               ul{
+                    gap: 3rem;
+                    a{
+                         color: inherit;
+                         font-weight: 600;
+                    }
+               }
+          }
+          .menu{
+               padding: .5rem 1rem;
+               font-size: 20px;
+               border: 1px solid;
+               color:inherit;
+               background: none;
+               border-radius: 5px;
+               display: none;
+               width: 40px;
+          }
+     }
+
+     .banner{
+          .service-text{
+               max-width: 473px;
+               .lg{ font-size: 28px; font-weight: 600;   margin-bottom: 3rem; }
+               .lg+p{ line-height: 1.7; }
+               a{ display: inline-block; margin-top: 4rem; width: 185px; line-height: 50px; background: var(--white); color: var(--black); border-radius: 5px; text-align: center; font-weight: 600; }
+          }
+          .slick-dots{
+               display: flex;
+               justify-content: center;
+               gap: 2rem;
+               button{
+                    width: 30px;
+                    aspect-ratio: 1/1;
+                    border-radius: 50%;
+                    border: none;
+                    background: none;
+                    color: #fff;
+                    border: 1px solid;
+               }
+               .slick-active button{background: #fff; color: var(--blue); }
+          }
+     }
+}
+
+
+.wrap-2{ 
+     background: var(--white); padding: 10rem 0;
+     h2{font-size: 20px; font-weight: 500; color: var(--blue); margin-bottom: 1rem;}
+     h2+p{ font-size: 28px !important; font-weight: 700 !important; margin-bottom: 4rem !important;}
+     .op6{ opacity: .6;}
+     .services{
+          .card{
+               box-shadow: 0 0 13px #0000001a;
+               padding: 30px 60px 40px 30px; 
+               h3{ font-weight: 600; font-size: 20px;}
+               p{ opacity: .6; font-size: 14px; margin: 20px 0 30px;}
+               a{ color: inherit; font-size: 14px;}
+               border-radius: 5px;
+               border-top: 15px solid transparent;
+          }
+          .card-dark{ background: #132577; color: #fff;}
+          .card-bt{ border-top-color:  var(--blue);}
+     }
+
+     .info{
+          margin: 10rem 0;
+          p:first-child{ font-size: 24px; font-weight: 600; }
+          p:last-child{ font-size: 14px; font-weight: 500; }
+     }
+
+     .about{
+          ul{ list-style: disc; padding-left: 4rem; margin-top: 2rem;}
+     }
+
+     .testimonials{margin: 10rem 0;
+          .card{
+               text-align: center;
+               .card-up{
+                     box-shadow: 0 0 18px #0000001a;
+                     padding: 73.5px 64px 0;
+                    .star{ color: var(--lgray); margin: 2rem 0 0 0 ;
+                         .fill{ color: var(--yellow);}
+                    }
+                    img{ transform: translateY(34px);}
+                     
+               }
+               .card-down{
+                    padding-top: 54px;
+               }
+          }
+     }
+
+     .projects{
+          p{ font-size: 14px; margin: 2rem 0;}
+          a{ display: inline-block; width: 214px; line-height: 51px; background: var(--blue); color: var(--white); border-radius: 5px; text-align: center;}
+     }
+
+     .team{ margin: 10rem 0 0 0;
+          .card{
+               padding: 1rem 1rem 6.5rem 1rem;
+               box-shadow: 0 0 18px #0000001a;
+               h3{ margin: 20px 0 5px; }
+               .social{ margin-top: 4rem;
+                    .flex{ gap: 5rem;
+                         a{ display: block; width: 50px; line-height: 46px; border: 2px solid; color: var(--blue);; border-radius: 50%; font-size: 20px;}
+                    }
+               }
+          }
+     }
+
+}
+
+
+
+.wrap-3{ background: var(--blue); color: var(--white); padding: 6rem 0;
+     h3{ color: var(--lgray); }
+     a{ color: inherit;}
+     ul{ line-height: 4rem; margin-top: 2.5rem;}
+     .f-top{ margin-bottom: 4rem;}
+}
+
+
+
+@media screen and (max-width:1279px){
+     
+     .wrap-2 .testimonials .card .card-up {
+          padding: 1rem;
+     }
+}
+
+@media screen and (max-width:960px){
+     .wrap-1 header nav ul{ gap: 1rem;}
+     .col-t-6{ grid-column: span 6;}
+     .col-t-12{ grid-column: span 12;}
+     .col-t-ob{ order: -1;}
+     .wrap-2 .team .card  .social .flex {
+          gap: 2rem;
+     }
+}     
+
+@media screen and (max-width:767px){
+     .f-top .flex{ flex-flow: wrap;}
+     .wrap-1 header .menu{display: block;}
+     nav{ display: none; position: absolute; top: 105px; background: #132577ee; left: 0; right: 0; padding: 1rem; text-align: right;}
+     nav ul{ flex-flow: column; }
+
+}
+
+@media screen and (max-width:460px){
+     .col-p-6{ grid-column: span 6;}
+     .col-p-12{ grid-column: span 12;}
+
+}
